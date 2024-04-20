@@ -284,7 +284,7 @@ void ASimHUD::createSimMode()
                                                              FRotator::ZeroRotator,
                                                              simmode_spawn_params);
     else if (simmode_name == AirSimSettings::kSimModeTypeBoth)
-        simmode_ = this->GetWorld()->SpawnActor<ASimModeCar>(FVector::ZeroVector,
+        simmode_ = this->GetWorld()->SpawnActor<ASimModeWorldBoth>(FVector::ZeroVector,
                                                              FRotator::ZeroRotator,
                                                              simmode_spawn_params);
     else if (simmode_name == AirSimSettings::kSimModeTypeComputerVision)

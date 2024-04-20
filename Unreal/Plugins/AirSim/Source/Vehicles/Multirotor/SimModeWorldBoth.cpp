@@ -104,7 +104,7 @@ void ASimModeWorldBoth::getExistingVehiclePawns(TArray<AActor*>& pawns) const
     for (AActor* fpawn : FlyingPawns)
     {
         pawns.Add(fpawn);
-        if (getSettings().simmode_name == "Both"){
+        if (getSettings().simmode_name == AirSimSettings::kSimModeTypeBoth){
             APawn* vehicle_pawn = static_cast<APawn*>(fpawn);
             addPawnToMap(vehicle_pawn, AirSimSettings::kVehicleTypeSimpleFlight);
         }
@@ -115,7 +115,7 @@ void ASimModeWorldBoth::getExistingVehiclePawns(TArray<AActor*>& pawns) const
     for (AActor* cpawn : CarPawns)
     {
         pawns.Add(cpawn);
-        if (getSettings().simmode_name == "Both"){
+        if (getSettings().simmode_name == AirSimSettings::kSimModeTypeBoth){
             APawn* vehicle_pawn = static_cast<APawn*>(cpawn);
             addPawnToMap(vehicle_pawn, AirSimSettings::kVehicleTypePhysXCar);
         }
