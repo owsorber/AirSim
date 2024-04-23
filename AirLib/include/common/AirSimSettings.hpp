@@ -1362,7 +1362,7 @@ namespace airlib
         {
             if (simmode_name == kSimModeTypeMultirotor || simmode_name == kSimModeTypeBoth) {
                 sensors["imu"] = createSensorSetting(SensorBase::SensorType::Imu, "imu", true);
-                sensors["magnetometer"] = createSensorSetting(SensorBase::SensorType::Magnetometer, "magnetometer", true);
+                //sensors["magnetometer"] = createSensorSetting(SensorBase::SensorType::Magnetometer, "magnetometer", true);
                 sensors["gps"] = createSensorSetting(SensorBase::SensorType::Gps, "gps", true);
                 sensors["barometer"] = createSensorSetting(SensorBase::SensorType::Barometer, "barometer", true);
             }
